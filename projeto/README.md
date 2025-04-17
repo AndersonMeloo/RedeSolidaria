@@ -7,7 +7,7 @@ O **Rede Solidária** é uma plataforma criada para conectar **pessoas, causas s
 
 ## ✅ **O que foi feito até agora?**
 
-### 🗂️ **Estrutura do Projeto**
+✅🗂️ **Estrutura do Projeto**
 - A primeira etapa do projeto foi a **organização das pastas** e a configuração inicial do ambiente de desenvolvimento.
 - A estrutura do código foi planejada para facilitar o crescimento do projeto, criando uma base sólida para as funcionalidades que virão a seguir.
 
