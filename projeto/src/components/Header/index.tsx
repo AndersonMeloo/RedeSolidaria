@@ -1,15 +1,31 @@
+interface HeaderProps {
+    name: string,
+    idade: number;
+}
 
+function Header({ name, idade }: HeaderProps) {
 
-
-export function Headear() {
+    const carro = 'Acelerando o Carro';
 
     return (
         <>
-            <nav>
+            <p>{name}</p>
+            <p>{idade}</p>
+            <p>{name === 'Anderson' && `${name} está ${carro} a 200KM`}</p>
 
-                <a href="">Doação</a>
-                <a href="">Contato</a>
-            </nav>
         </>
-    )
+    );
 }
+
+export default Header;
+
+export function Imagem({ imagem }: { imagem: string }) {
+
+    return (
+
+        <div>
+            <img src={imagem} alt="" />
+        </div>
+    );
+}
+

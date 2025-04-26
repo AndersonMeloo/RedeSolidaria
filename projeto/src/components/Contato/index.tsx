@@ -1,15 +1,20 @@
-// import sass from './sass.module.scss'
+import { useState } from "react";
 
+function Atualizar() {
 
-type HeaderProps = {
-    children: React.ReactNode;
-}
-
-export function Header({ children }: HeaderProps) {
+    const [jogar, setJogar] = useState('')
 
     return (
-        <nav>
-            <a href="">{children}</a>
-        </nav>
+
+        <>
+            <label>Jogar Algo</label>
+            <input type=""
+                onChange={(event) => setJogar(event.target.value)}
+            />
+            {jogar}
+        </>
+
     )
 }
+
+export default Atualizar;
