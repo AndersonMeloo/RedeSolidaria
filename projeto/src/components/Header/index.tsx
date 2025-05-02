@@ -1,4 +1,5 @@
 interface HeaderProps {
+
     name: string,
     idade: number;
 }
@@ -12,6 +13,7 @@ function Header({ name, idade }: HeaderProps) {
             <p>{name}</p>
             <p>{idade}</p>
             <p>{name === 'Anderson' && `${name} está ${carro} a 200KM`}</p>
+            <p>{`${name} está ${carro}`}</p>
 
         </>
     );

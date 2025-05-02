@@ -2,16 +2,16 @@ import { useState } from "react";
 
 function Atualizar() {
 
-    const [jogar, setJogar] = useState('')
+    const [doar, setDoar] = useState('')
 
     return (
 
         <>
-            <label>Jogar Algo</label>
+            <label>Doar algo <br /></label>
             <input type=""
-                onChange={(event) => setJogar(event.target.value)}
+                onChange={(event) => setDoar(event.target.value)}
             />
-            {jogar}
+            {doar}
         </>
 
     )
