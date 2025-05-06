@@ -1,4 +1,5 @@
 import sass from './sass.module.scss'
+import minhaImagem from './img/gift.svg'
 
 type DoacaoProps = {
     children: React.ReactNode,
@@ -13,6 +14,9 @@ function Doacao({ children }: DoacaoProps) {
 
                 <div className={sass.container1}>
                     {children}
+                    
+
+                    <img src={minhaImagem} alt="Imagem Doação de Presente" />
 
                 </div>
 
@@ -36,14 +40,3 @@ function Doacao({ children }: DoacaoProps) {
 
 export default Doacao;
 
-export function Imagem({ imagem }: { imagem: string }) {
-
-    return (
-
-        <>
-            <img src={imagem} alt="" className={sass.imagem}/>
-            {}
-            teste
-        </>
-    )
-}
