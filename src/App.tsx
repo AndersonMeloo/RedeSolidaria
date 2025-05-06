@@ -14,16 +14,8 @@ function App() {
         <h1>Rede Solidaria</h1>
       </Doacao>
 
-      {/* <Header idade={27} name="Anderson" /> */}
-
-      {/* <Imagem imagem="https://images.summitmedia-digital.com/topgear/images/2024/01/24/1-1706068083.jpg" /> */}
-
-      {/* <Atualizar/> */}
-
-      {/* <Doacoes /> */}
-
-
     </>
+    
   )
 }
 

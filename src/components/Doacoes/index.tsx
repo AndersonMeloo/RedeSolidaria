@@ -1,5 +1,5 @@
 import sass from './sass.module.scss'
-import minhaImagem from './img/gift.svg'
+import imagemDoacao from './img/gift.svg'
 
 type DoacaoProps = {
     children: React.ReactNode,
@@ -14,9 +14,9 @@ function Doacao({ children }: DoacaoProps) {
 
                 <div className={sass.container1}>
                     {children}
-                    
 
-                    <img src={minhaImagem} alt="Imagem Doação de Presente" />
+
+                    <img src={imagemDoacao} alt="Imagem Doação de Presente" />
 
                 </div>
 
