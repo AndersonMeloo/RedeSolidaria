@@ -4,13 +4,13 @@ type CadastroProps = {
     labelText: string,
 } & React.ComponentProps<'input'>;
 
-function Cadastro({id, labelText, type, ...rest} : CadastroProps) {
+function Cadastro({id, labelText, type, ...props} : CadastroProps) {
 
     return (  
 
         <>
             <label htmlFor={id}>{labelText}</label>
-            <input type={type} {...rest} />
+            <input type={type} {...props} />
         </>
     );
 }
