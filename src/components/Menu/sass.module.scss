@@ -1,0 +1,104 @@
+@use '../../assets/sass/global.scss' as *;
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-montserrat);
+
+    .menuLogo {
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            font-family: var(--font-Poppins);
+        }
+    }
+
+    .menuLinks {
+        display: flex;
+        gap: 1.2rem;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            align-items: center;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #000;
+            letter-spacing: 1px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 0;
+                background-color: #49c0f7;
+                transition: width .3s ease;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            &:hover {
+                color: #49c0f7;
+            }
+        }
+    }
+
+    .menuConta {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            width: 100%;
+            padding: 0 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #fff;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .2);
+            border-radius: .4rem;
+            transition: transform .3s ease-in-out;
+            padding: .4rem 1rem;
+        }
+
+        :nth-child(1) {
+            color: #49c0f7;
+            background-color: #fff;
+            border: 2px solid #49c0f7;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #49c0f7;
+                border: 2px solid #fff;
+                color: #fff;
+            }
+        }
+
+        :nth-child(2) {
+            background-color: #49c0f7;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #fff;
+                border: 2px solid #49c0f7;
+                color: #49c0f7;
+            }
+        }
+    }
+}

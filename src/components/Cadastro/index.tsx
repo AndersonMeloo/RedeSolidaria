@@ -10,7 +10,7 @@ function Cadastro({id, labelText, type, ...props} : CadastroProps) {
 
         <>
             <label htmlFor={id}>{labelText}</label>
-            <input type={type} {...props} />
+            <input type={type} {...props} />''
         </>
     );
 }

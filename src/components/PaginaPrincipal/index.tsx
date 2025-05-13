@@ -1,11 +1,11 @@
 import sass from './sass.module.scss'
 import imagemDoacao from './img/gift.svg'
 
-type DoacaoProps = {
-    children: React.ReactNode,
-}
+// type DoacaoProps = {
+//     children: React.ReactNode,
+// }
 
-function Doacao({ children }: DoacaoProps) {
+function PaginaPrincipal() {
 
     return (
 
@@ -13,7 +13,7 @@ function Doacao({ children }: DoacaoProps) {
             <div className={sass.container}>
 
                 <div className={sass.container1}>
-                    {children}
+                    {/* {children} */}
 
 
                     <img src={imagemDoacao} alt="Imagem Doação de Presente" />
@@ -38,5 +38,5 @@ function Doacao({ children }: DoacaoProps) {
     );
 }
 
-export default Doacao;
+export default PaginaPrincipal;
 

@@ -1,21 +1,31 @@
-// import Atualizar from "./components/Contato"
-// import Header from "./components/Header"
+import { Route, Routes, Outlet } from 'react-router-dom'
 
 import './assets/sass/global.scss'
-import Doacao from "./components/Doacoes"
+
+import Menu from './components/Menu'
+import PaginaPrincipal from './components/PaginaPrincipal'
+
+function Layout() {
+
+  return (
+    <>
+      <Menu />
+      <Outlet />
+    </>
+  )
+}
 
 function App() {
 
   return (
 
-    <>
+    <Routes>
 
-      <Doacao>
-        <h1>Rede Solidaria</h1>
-      </Doacao>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<PaginaPrincipal />} />
+      </Route>
+    </Routes>
 
-    </>
-    
   )
 }
 
