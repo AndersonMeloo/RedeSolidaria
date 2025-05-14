@@ -20,7 +20,7 @@ function Menu() {
 
                 <div className={sass.menuConta}>
                     <Link to="/login">Login</Link>
-                    <Link to="/registro">Registrar</Link>
+                    <Link to="/cadastro">Registrar</Link>
                 </div>
 
             </div>

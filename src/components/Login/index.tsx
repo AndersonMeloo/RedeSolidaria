@@ -1,4 +1,5 @@
-function Sobre() {
+function Login() {
+
     return ( 
 
         <>
@@ -7,4 +8,4 @@ function Sobre() {
      );
 }
 
-export default Sobre;
+export default Login;

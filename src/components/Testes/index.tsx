@@ -31,3 +31,22 @@ export function Imagem({ imagem }: { imagem: string }) {
     );
 }
 
+import { useState } from "react";
+
+export function Atualizar() {
+
+    const [doar, setDoar] = useState('')
+
+    return (
+
+        <>
+            <label>Doar algo <br /></label>
+            <input type=""
+                onChange={(event) => setDoar(event.target.value)}
+            />
+            {doar}
+        </>
+
+    )
+}
+

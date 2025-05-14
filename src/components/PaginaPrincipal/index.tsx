@@ -1,5 +1,6 @@
 import sass from './sass.module.scss'
 import imagemDoacao from './img/gift.svg'
+import { Link } from 'react-router-dom';
 
 // type DoacaoProps = {
 //     children: React.ReactNode,
@@ -30,7 +31,7 @@ function PaginaPrincipal() {
                         precisa e construir um futuro mais justo, humano
                         e sustentável.</p>
 
-                    <a href="" className={sass.doacao}>Faça sua doação</a>
+                    <Link to="doacoes" className={sass.doacao}>Faça sua doação</Link>
                 </div>
 
             </div>
