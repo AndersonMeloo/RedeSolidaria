@@ -1,16 +1,27 @@
-type CadastroProps = {
+// type CadastroProps = {
 
-    id: string;
-    labelText: string,
-} & React.ComponentProps<'input'>;
+//     id: string;
+//     labelText: string,
+// } & React.ComponentProps<'input'>;
 
-function Cadastro({id, labelText, type, ...props} : CadastroProps) {
+// function Cadastro({id, labelText, type, ...props} : CadastroProps) {
 
-    return (  
+//     return (  
 
+//         <>
+//             <label htmlFor={id}>{labelText}</label>
+//             <input type={type} {...props} />''
+//         </>
+//     );
+// }
+
+// export default Cadastro;
+
+function Cadastro() {
+    
+    return (
         <>
-            <label htmlFor={id}>{labelText}</label>
-            <input type={type} {...props} />
+
         </>
     );
 }

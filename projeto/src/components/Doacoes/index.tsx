@@ -1,42 +1,11 @@
-import sass from './sass.module.scss'
-import imagemDoacao from './img/gift.svg'
-
-type DoacaoProps = {
-    children: React.ReactNode,
-}
-
-function Doacao({ children }: DoacaoProps) {
+function Doacoes() {
 
     return (
 
         <>
-            <div className={sass.container}>
-
-                <div className={sass.container1}>
-                    {children}
-
-
-                    <img src={imagemDoacao} alt="Imagem Doação de Presente" />
-
-                </div>
-
-                <div className={sass.container2}>
-                    <p>Ajude a Transformar Vidas com Sua Doação</p>
-                    <p>Cada contribuição faz a diferença. Ao doar,
-                        você se torna parte de uma rede de solidariedade
-                        que impacta positivamente a vida de milhares de
-                        pessoas. Com sua ajuda, conseguimos ampliar
-                        nossos projetos, oferecer apoio a quem mais
-                        precisa e construir um futuro mais justo, humano
-                        e sustentável.</p>
-
-                    <a href="" className={sass.doacao}>Faça sua doação</a>
-                </div>
-
-            </div>
+            <h1>teste</h1>
         </>
     );
 }
 
-export default Doacao;
-
+export default Doacoes;
