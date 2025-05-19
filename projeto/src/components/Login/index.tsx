@@ -3,7 +3,13 @@ import imgLogin from '../../../imgs/icon-conta.png'
 
 import sass from './sass.module.scss'
 
-function Login() {
+type LoginProps = {
+    
+    id: string,
+    labelText: string,
+} & React.ComponentProps<'input'>
+
+function Login({id, }) {
 
     return (
 
@@ -14,7 +20,7 @@ function Login() {
                     <img src={imgLogin} alt="" />
                 </div>
 
-                <div className={sass.teste}>
+                <div className={sass.loginApresentacao}>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui, dolores nostrum corporis officia perferendis consequatur, molestias quaerat commodi odio alias nihil. Voluptatum voluptatem omnis minus eaque illum, nemo aliquid!
                     </p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui, dolores nostrum corporis officia perferendis consequatur, molestias quaerat commodi odio alias nihil. Voluptatum voluptatem omnis minus eaque illum, nemo aliquid!
