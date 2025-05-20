@@ -1,4 +1,3 @@
-// import videoLogin from '../../../imgs/vid/Animation - 1747364139322.webm'
 import imgLogin from '../../../imgs/icon-conta.png'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import sass from './sass.module.scss'
@@ -44,6 +43,10 @@ function Login() {
                         loop
                         autoplay
                     />
+
+                    <p>Não tem uma conta?
+                        <a href="#">Faça seu cadastro</a>
+                    </p>
                 </div>
             </div>
 

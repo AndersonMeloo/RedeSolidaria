@@ -76,7 +76,8 @@
 
         &::placeholder {
             color: #fff;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-family: var(--font-montserrat);
         }
 
         &:hover {
@@ -104,5 +105,25 @@
 
 .right {
     width: 50%;
-    padding: 2rem;
+    padding: 1rem 0 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    a,
+    p {
+        color: #79a2ff;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        font-family: var(--font-montserrat);
+        font-weight: 900;
+        display: flex;
+        gap: .6rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
