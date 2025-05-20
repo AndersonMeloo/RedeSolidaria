@@ -1,37 +1,52 @@
 // import videoLogin from '../../../imgs/vid/Animation - 1747364139322.webm'
 import imgLogin from '../../../imgs/icon-conta.png'
-
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import sass from './sass.module.scss'
 
-type LoginProps = {
-    
-    id: string,
-    labelText: string,
-} & React.ComponentProps<'input'>
 
-function Login({id, }) {
+function Login() {
 
     return (
 
         <>
             <div className={sass.container}>
+                <div className={sass.left}>
+                    <div className={sass.loginBox}>
+                        <div className={sass.loginImg}>
+                            <img src={imgLogin} alt="Imagem de login" />
+                        </div>
 
-                <div className={sass.login}>
-                    <img src={imgLogin} alt="" />
+                        <form className={sass.loginForm}>
+                            <label>Nome</label>
+                            <input type="text" />
+
+                            <label>E-mail</label>
+                            <input type="email" />
+
+                            <label>Telefone</label>
+                            <input type="tel" placeholder="(00) 00000-0000" />
+
+                            <label>Senha</label>
+                            <input type="password" />
+
+                            <label>Confirmar Senha</label>
+                            <input type="password" />
+
+                            <a href="">Entrar</a>
+                        </form>
+                    </div>
                 </div>
 
-                <div className={sass.loginApresentacao}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui, dolores nostrum corporis officia perferendis consequatur, molestias quaerat commodi odio alias nihil. Voluptatum voluptatem omnis minus eaque illum, nemo aliquid!
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui, dolores nostrum corporis officia perferendis consequatur, molestias quaerat commodi odio alias nihil. Voluptatum voluptatem omnis minus eaque illum, nemo aliquid!
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui, dolores nostrum corporis officia perferendis consequatur, molestias quaerat commodi odio alias nihil. Voluptatum voluptatem omnis minus eaque illum, nemo aliquid!
-                    </p>
-                </div>
 
+                <div className={sass.right}>
+                    <DotLottieReact
+                        src="https://lottie.host/60bdf94d-a682-4aed-a066-b6dfc2c1f300/HbonktipPk.lottie"
+                        loop
+                        autoplay
+                    />
+                </div>
             </div>
 
-            {/* <video src={videoLogin}></video> */}
         </>
     );
 }

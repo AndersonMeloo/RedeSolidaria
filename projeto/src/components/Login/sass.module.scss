@@ -1,26 +1,108 @@
+@use '../../assets//sass//global.scss' as *;
+@use '../../assets//sass//theme.scss' as *;
+
 .container {
-    width: 100%;
-    height: auto !important;
     display: flex;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.4rem;
+}
+
+.loginBox {
+    border-radius: 8px;
+    border: 2px solid #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 60%;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+    background-color: #79a2ff;
+}
 
-    .login {
-        height: 84vh !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.loginImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 40%;
+        height: auto;
+        border: 2px solid #fff;
+        border-radius: 100%;
+    }
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    label {
+        margin: 0.4rem 0;
         width: 50%;
+        text-align: left;
+        letter-spacing: 1px;
+        font-family: var(--font-montserrat);
+        color: #ffffff;
+    }
 
-        img {
-            border: 1px solid #000;
-            padding: 12rem 8rem;
-            width: 20%;
+    input {
+        padding: 0.2rem 0.8rem;
+        margin-bottom: 0.5rem;
+        width: 50%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        background-color: #79a2ff;
+        border: transparent;
+        border-bottom: 1px solid #fff;
+        transition: .3s ease-in-out;
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+        &:hover {
+            border: 1px solid #fff;
         }
     }
 
-    .loginApresentacao {
-        width: 50%;
-        height: 100% !important;
+    a {
+        margin-top: 1rem;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: var(--font-poppins);
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+        width: 20%;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            width: 26%;
+        }
     }
+}
+
+.right {
+    width: 50%;
+    padding: 2rem;
 }
