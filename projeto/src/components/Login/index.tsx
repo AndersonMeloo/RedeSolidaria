@@ -1,6 +1,7 @@
 import imgLogin from '../../../imgs/icon-conta.png'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import sass from './sass.module.scss'
+import { Link } from 'react-router-dom';
 
 
 function Login() {
@@ -17,19 +18,19 @@ function Login() {
 
                         <form className={sass.loginForm}>
                             <label>Nome</label>
-                            <input type="text" />
+                            <input type="text" required />
 
                             <label>E-mail</label>
-                            <input type="email" />
-
+                            <input type="email" required />
+                            {/* 
                             <label>Telefone</label>
-                            <input type="tel" placeholder="(00) 00000-0000" />
+                            <input type="tel" placeholder="(00) 00000-0000" /> */}
 
                             <label>Senha</label>
-                            <input type="password" />
+                            <input type="password" required />
 
-                            <label>Confirmar Senha</label>
-                            <input type="password" />
+                            {/* <label>Confirmar Senha</label>
+                            <input type="password" /> */}
 
                             <a href="">Entrar</a>
                         </form>
@@ -45,11 +46,10 @@ function Login() {
                     />
 
                     <p>Não tem uma conta?
-                        <a href="#">Faça seu cadastro</a>
+                        <Link to="/cadastro" >Faça seu cadastro</Link>
                     </p>
                 </div>
             </div>
-
         </>
     );
 }
