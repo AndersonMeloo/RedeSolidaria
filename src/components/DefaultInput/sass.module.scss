@@ -1,0 +1,31 @@
+@use '../../assets//sass//global.scss' as *;
+@use '../../assets//sass/theme.scss' as *;
+
+label {
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: var(--font-montserrat);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #79a2ff;
+    border: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-family: var(--font-montserrat);
+    transition: .3s ease-in-out;
+
+    &:hover {
+        border: 1px solid #fff;
+    }
+
+    &::placeholder {
+        color: #fff;
+    }
+}

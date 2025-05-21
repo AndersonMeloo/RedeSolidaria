@@ -4,11 +4,11 @@ import './assets/sass/global.scss'
 
 import Menu from './components/Menu'
 import PaginaPrincipal from './components/PaginaPrincipal'
+import Doacoes from './components/Doacoes'
 import Sobre from './components/Sobre'
 import Contato from './components/Contato'
-import Cadastro from './components/Cadastro'
-import Doacoes from './components/Doacoes'
 import Login from './components/Login'
+import Cadastro from './components/Cadastro'
 
 function Layout() {
 
