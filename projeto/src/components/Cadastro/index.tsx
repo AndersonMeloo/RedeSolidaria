@@ -29,7 +29,6 @@ function Cadastro() {
                     </div>
                 </form>
             </div>
-
         </>
     );
 }

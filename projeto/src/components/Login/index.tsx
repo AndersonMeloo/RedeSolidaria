@@ -17,8 +17,8 @@ function Login() {
                         </div>
 
                         <form className={sass.loginForm}>
-                            <label>Nome</label>
-                            <input type="text" required />
+                            {/* <label>Nome</label>
+                            <input type="text" required /> */}
 
                             <label>E-mail</label>
                             <input type="email" required />
