@@ -1,3 +1,5 @@
+import sass from './sass.module.scss'
+
 type DefaultButtonProps = {
 
     children: React.ReactNode,
@@ -9,7 +11,9 @@ function DefaultButton({ id, children }: DefaultButtonProps) {
     return (
 
         <>
-            <span id={id}>{children}</span>
+            <div className={sass.button}>
+                <button className={sass.containerButton} id={id}>{children}</button>
+            </div>
         </>
     );
 }

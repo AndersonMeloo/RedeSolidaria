@@ -1,7 +1,8 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-// import DefaultButton from "../DefaultButton";
+import DefaultButton from "../DefaultButton";
 import DefaultInput from "../DefaultInput";
 import sass from './sass.module.scss'
+import { Link } from "react-router-dom";
 
 function Cadastro() {
 
@@ -17,6 +18,8 @@ function Cadastro() {
                             loop
                             autoplay
                         />
+                        <Link to="/login" >Tem uma conta?
+                            <span>Faça seu Login</span></Link>
                     </div>
 
                     <div className={sass.cadastro}>
@@ -26,6 +29,10 @@ function Cadastro() {
                         <DefaultInput id="" labelText="Telefone" type="tel" placeholder="(00) 00000-0000" required />
                         <DefaultInput id="" labelText="Senha" type="password" required />
                         <DefaultInput id="" labelText="Confirmar Senha" type="password" required />
+
+                        <DefaultButton id="">
+                            Cadastrar
+                        </DefaultButton>
                     </div>
                 </form>
             </div>
