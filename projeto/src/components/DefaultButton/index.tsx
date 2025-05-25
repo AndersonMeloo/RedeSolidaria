@@ -11,8 +11,8 @@ function DefaultButton({ id, children }: DefaultButtonProps) {
     return (
 
         <>
-            <div className={sass.button}>
-                <button className={sass.containerButton} id={id}>{children}</button>
+            <div className={sass.containerButton}>
+                <button className={sass.btn} id={id}>{children}</button>
             </div>
         </>
     );
