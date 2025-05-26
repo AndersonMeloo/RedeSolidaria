@@ -1,8 +1,19 @@
 /* Tema Light */
 :root[data-theme='light'] {
   --background-color: #dcecf4;
+  --color-button: #49c0f7;
+  --color-form: #465e94;
+  --color-text: #fff;
+  --color-text-one: #000;
+  --color-link: #79a2ff;
 }
 
+/* Tema Dark */
 :root[data-theme='dark'] {
-  --background-color: #000;
+  --background-color: #4c788d;
+  --background-color: #4492b7;
+  --color-button: #2e596d;
+  --color-form: #465e94;
+  --color-text: #fff;
+  --color-link: ##9fb9f9;
 }
