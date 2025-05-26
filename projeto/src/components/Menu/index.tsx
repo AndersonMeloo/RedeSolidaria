@@ -14,8 +14,8 @@ function Menu() {
     })
 
     const nextThemeIcon = {
-        dark: <MoonIcon size={32} />,
-        light: <SunIcon size={32} />
+        dark: <SunIcon size={32} />,
+        light: <MoonIcon size={32} />
     }
 
     useEffect(() => {
