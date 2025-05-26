@@ -23,14 +23,14 @@ function Cadastro() {
                     </div>
 
                     <div className={sass.cadastro}>
-                        <DefaultInput id="" labelText="Nome" type="text" required />
-                        <DefaultInput id="" labelText="Ano Nascimento" type="date" />
-                        <DefaultInput id="" labelText="E-mail" placeholder="user1234@" type="email" required />
-                        <DefaultInput id="" labelText="Telefone" type="tel" placeholder="(00) 00000-0000" required />
-                        <DefaultInput id="" labelText="Senha" type="password" required />
-                        <DefaultInput id="" labelText="Confirmar Senha" type="password" required />
+                        <DefaultInput id="#" labelText="Nome" type="text" required />
+                        <DefaultInput id="#" labelText="Ano Nascimento" type="date" />
+                        <DefaultInput id="#" labelText="E-mail" placeholder="user1234@" type="email" required />
+                        <DefaultInput id="#" labelText="Telefone" type="tel" placeholder="(00) 00000-0000" required />
+                        <DefaultInput id="#" labelText="Senha" type="password" required />
+                        <DefaultInput id="#" labelText="Confirmar Senha" type="password" required />
 
-                        <DefaultButton id="">
+                        <DefaultButton id="#">
                             Cadastrar
                         </DefaultButton>
                     </div>
