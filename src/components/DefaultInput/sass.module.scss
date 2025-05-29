@@ -1,31 +1,57 @@
 @use '../../assets//sass//global.scss' as *;
 @use '../../assets//sass/theme.scss' as *;
 
-label {
-    color: #fff;
-    letter-spacing: 1px;
-    font-family: var(--font-montserrat);
+  .imagemInput {
+        width: 20%;
+    }
+
+.defaultInput {
+    margin-left: auto;
+    background-color: #79a2ff;
+    width: 50%;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
+    flex-direction: column;
+    padding: 1rem 4rem;
+    margin-right: 10rem;
 
-input {
-    letter-spacing: 2px;
-    color: #fff;
-    background-color: #79a2ff;
-    border: transparent;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    font-family: var(--font-montserrat);
-    transition: .3s ease-in-out;
-
-    &:hover {
-        border: 1px solid #fff;
+    label {
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: var(--font-montserrat);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: .2rem;
     }
 
-    &::placeholder {
+    input {
+        letter-spacing: 2px;
         color: #fff;
+        background-color: #79a2ff;
+        border: transparent;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        font-family: var(--font-montserrat);
+        font-weight: 900;
+        transition: .3s ease-in-out;
+        border-radius: .3rem;
+
+        &:types {
+            cursor: pointer;
+        }
+        
+
+        &:hover {
+            border: 1px solid #fff;
+        }
+
+        &::placeholder {
+            color: #fff;
+            font-weight: 900;
+        }
     }
 }

@@ -1,0 +1,50 @@
+@use '../../assets/sass/global.scss' as *;
+@use '../../assets/sass/theme.scss' as *;
+
+.containerSobre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    justify-items: center;
+
+    .containerTextos {
+        width: 50%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-family: var(--font-montserrat);
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: #759F2C;
+            // color: var(--color-button);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        p {
+            width: 86%;
+            font-family: var(--font-poppins);
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    div {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+    }
+}

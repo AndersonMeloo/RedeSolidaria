@@ -17,20 +17,20 @@ function Login() {
                         </div>
 
                         <form className={sass.loginForm}>
-                            <label>Nome</label>
-                            <input type="text" />
+                            {/* <label>Nome</label>
+                            <input type="text" required /> */}
 
                             <label>E-mail</label>
-                            <input type="email" />
-
+                            <input type="email" required />
+                            {/* 
                             <label>Telefone</label>
-                            <input type="tel" placeholder="(00) 00000-0000" />
+                            <input type="tel" placeholder="(00) 00000-0000" /> */}
 
                             <label>Senha</label>
-                            <input type="password" />
+                            <input type="password" required />
 
-                            <label>Confirmar Senha</label>
-                            <input type="password" />
+                            {/* <label>Confirmar Senha</label>
+                            <input type="password" /> */}
 
                             <a href="">Entrar</a>
                         </form>
@@ -45,9 +45,7 @@ function Login() {
                         autoplay
                     />
 
-                    <p>Não tem uma conta?
-                        <Link to="/cadastro" >Faça seu cadastro</Link>
-                    </p>
+                    <Link to="/cadastro" >Faça seu cadastro <span>Não tem uma conta?</span></Link>
                 </div>
             </div>
         </>

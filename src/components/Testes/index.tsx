@@ -1,52 +1,61 @@
-interface HeaderProps {
+import { HistoryIcon, HouseIcon, MoonIcon, SettingsIcon, SunIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
-    name: string,
-    idade: number;
-}
+type AvailableTheme = "dark" | 'light'
 
-function Header({ name, idade }: HeaderProps) {
+function Menu() {
 
-    const carro = 'Acelerando o Carro';
+    const [theme, setTheme] = useState(() => {
 
-    return (
-        <>
-            <p>{name}</p>
-            <p>{idade}</p>
-            <p>{name === 'Anderson' && `${name} está ${carro} a 200KM`}</p>
-            <p>{`${name} está ${carro}`}</p>
+        const storageTheme = localStorage.getItem('theme') as AvailableTheme || 'dark'
+        return storageTheme
+    })
 
-        </>
-    );
-}
+    function handleClickTheme(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
 
-export default Header;
+        event.preventDefault()
 
-export function Imagem({ imagem }: { imagem: string }) {
+        setTheme(prevTheme => {
 
-    return (
+            prevTheme = prevTheme === 'dark' ? 'light' : 'dark'
+            return prevTheme
+        })
+    }
 
-        <div>
-            <img src={imagem} alt="" />
-        </div>
-    );
-}
+    const nextThemeIcon = {
+        dark: <MoonIcon size={32} />,
+        light: <SunIcon size={32} />
+    }
 
-import { useState } from "react";
+    useEffect(() => {
 
-export function Atualizar() {
-
-    const [doar, setDoar] = useState('')
+        document.documentElement.setAttribute('data-theme', theme)
+        localStorage.setItem('theme', theme)
+    }, [theme])
 
     return (
 
         <>
-            <label>Doar algo <br /></label>
-            <input type=""
-                onChange={(event) => setDoar(event.target.value)}
-            />
-            {doar}
-        </>
+            <nav className="">
 
-    )
+                <a href="" className="">
+                    <HouseIcon size={32} />
+                </a>
+
+                <a href="" className="">
+                    <HistoryIcon size={32} />
+                </a>
+
+                <a href="" className="">
+                    <SettingsIcon size={32} />
+                </a>
+
+                <a href="" className="" onClick={handleClickTheme}>
+                    {nextThemeIcon[theme]}
+                </a>
+            </nav>
+        </>
+    );
 }
 
+export default Menu;
