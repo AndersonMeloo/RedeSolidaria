@@ -22,7 +22,7 @@ export default function Formulario({ onAtualizar, pessoaSelecionada }: Props) {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  }; 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
