@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://sua-api.com/api", // coloque a URL correta aqui
+    baseURL: "http://localhost/RedeSolidaria/backend/", //URL:
 });
 
 export default api;
