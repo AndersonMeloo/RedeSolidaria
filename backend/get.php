@@ -1,4 +1,4 @@
-<?php
+<!-- < ?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: GET");
@@ -13,4 +13,4 @@ try {
     echo json_encode(["erro" => false, "dados" => $pessoas]);
 } catch (PDOException $e) {
     echo json_encode(["erro" => true, "mensagem" => "Erro ao buscar dados: " . $e->getMessage()]);
-}
+} -->

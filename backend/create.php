@@ -1,4 +1,4 @@
-<?php
+<!-- < ?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: POST");
@@ -27,4 +27,4 @@ try {
     echo json_encode(["erro" => false, "mensagem" => "Pessoa cadastrada com sucesso."]);
 } catch (PDOException $e) {
     echo json_encode(["erro" => true, "mensagem" => "Erro ao cadastrar: " . $e->getMessage()]);
-}
+} -->
