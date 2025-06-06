@@ -1,4 +1,4 @@
-<!-- < ?php
+<?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 header("Access-Control-Allow-Methods: DELETE");
@@ -25,4 +25,4 @@ try {
     }
 } catch (PDOException $e) {
     echo json_encode(["erro" => true, "mensagem" => "Erro ao excluir: " . $e->getMessage()]);
-} -->
+}

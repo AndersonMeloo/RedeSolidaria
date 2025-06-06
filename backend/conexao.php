@@ -1,4 +1,4 @@
-<!-- < ?php
+<?php
 header('Content-Type: application/json');
 
 $host = 'localhost';
@@ -11,4 +11,4 @@ try {
 } catch (PDOException $e) {
     echo json_encode(["erro" => true, "mensagem" => "Erro ao conectar ao banco de dados."]);
     exit;
-} -->
+}
