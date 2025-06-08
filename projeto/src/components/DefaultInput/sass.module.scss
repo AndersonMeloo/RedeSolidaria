@@ -40,6 +40,11 @@
         transition: .3s ease-in-out;
         border-radius: .3rem;
 
+        &:types {
+            cursor: pointer;
+        }
+        
+
         &:hover {
             border: 1px solid #fff;
         }

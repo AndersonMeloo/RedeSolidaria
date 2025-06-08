@@ -8,10 +8,10 @@
 }
 
 body {
-    // background-color: #c0d6e0;
-    // background-color: #bbdae9;
-    background-color: #dcecf4;
+    // background-color: #dcecf4;
+    background-color: var(--background-color);
     overflow-x: hidden;
+    height: 100%;
 }
 
 :root {

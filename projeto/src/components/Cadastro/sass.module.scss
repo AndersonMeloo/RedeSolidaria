@@ -12,6 +12,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                font-family: var(--font-montserrat);
+                color: #79a2ff;
+                font-weight: 900;
+                cursor: pointer;
+
+                span {
+                    margin-left: 1rem;
+                    color: #fff;
+                }
+            }
 
             img {
                 width: 30% !important;

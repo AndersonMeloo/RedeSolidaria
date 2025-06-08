@@ -45,9 +45,7 @@ function Login() {
                         autoplay
                     />
 
-                    <p>Não tem uma conta?
-                        <Link to="/cadastro" >Faça seu cadastro</Link>
-                    </p>
+                    <Link to="/cadastro" >Faça seu cadastro <span>Não tem uma conta?</span></Link>
                 </div>
             </div>
         </>
