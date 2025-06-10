@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { Pessoa } from '../../Types/pessoas';
 
-interface Props {
+interface FormularioProps {
   onAtualizar: () => void;
   pessoaSelecionada?: Pessoa;
 }
 
-export default function Formulario({ onAtualizar, pessoaSelecionada }: Props) {
+export default function Formulario({ onAtualizar, pessoaSelecionada }: FormularioProps) {
   const [form, setForm] = useState<Pessoa>({
     nome: '',
     email: '',
@@ -20,14 +20,17 @@ export default function Formulario({ onAtualizar, pessoaSelecionada }: Props) {
     }
   }, [pessoaSelecionada]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+    setForm({ ...form, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (event: React.FormEvent) => {
+
+    event.preventDefault();
 
     try {
+
       if (form.codigo) {
         await api.put(`${form.codigo}`, form);
       } else {
@@ -36,9 +39,9 @@ export default function Formulario({ onAtualizar, pessoaSelecionada }: Props) {
 
       onAtualizar();
       setForm({ nome: '', email: '', telefone: '' });
-    } catch (error) {
-      console.log('Erro ao salvar dados.', error)
-      alert('Erro ao salvar dados.');
+    } catch (erro) {
+      console.log('Erro ao salvar os dados.', erro)
+      alert('Erro ao salvar os dados.');
     }
   };
 
@@ -46,14 +49,19 @@ export default function Formulario({ onAtualizar, pessoaSelecionada }: Props) {
     if (!form.codigo) return;
 
     try {
-      await api.delete(`${form.codigo}`);
+
+      await api.delete('delete.php', {
+        data: { codigo: form.codigo },
+      });
+
       onAtualizar();
       setForm({ nome: '', email: '', telefone: '' });
-    } catch (error) {
-      console.log('Erro ao excluir.', error)
-      alert('Erro ao excluir.');
+    } catch (erro) {
+      console.log('Erro ao excluir os dados.', erro);
+      alert('Erro ao excluir os dados.');
     }
   };
+
 
   return (
     <form onSubmit={handleSubmit}>

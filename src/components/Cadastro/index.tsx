@@ -3,7 +3,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import sass from './sass.module.scss';
 import { Link } from "react-router-dom";
 import DefaultInput from "../DefaultInput";
-import api from "../../services/api"; // ajuste o caminho conforme seu projeto
+import api from "../../services/api";
 
 function Cadastro() {
     const [nome, setNome] = useState("");
@@ -14,10 +14,12 @@ function Cadastro() {
     const [confirmarSenha, setConfirmarSenha] = useState("");
     const [mensagem, setMensagem] = useState("");
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
+    const handleSubmit = async (event: React.FormEvent) => {
+
+        event.preventDefault();
 
         if (senha !== confirmarSenha) {
+
             setMensagem("As senhas não coincidem.");
             return;
         }
@@ -26,11 +28,12 @@ function Cadastro() {
             nome,
             email,
             telefone,
-            anoNascimento, // opcional, só se for usar
-            senha, // só envie se a API aceitar
+            anoNascimento,
+            senha, // só envia se a API aceitar
         };
 
         try {
+
             const resposta = await api.post("", dados);
             if (resposta.data.erro) {
                 setMensagem(resposta.data.mensagem);
@@ -72,7 +75,7 @@ function Cadastro() {
                     <DefaultInput id="senha" labelText="Senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} required />
                     <DefaultInput id="confirmarSenha" labelText="Confirmar Senha" type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} required />
 
-                    <input type="submit" value="Cadastrar" />
+                    <input className={sass.inputEnvio} type="submit" value="Cadastrar" />
                     {mensagem && <p className={sass.alerta}>{mensagem}</p>}
                 </div>
             </form>
