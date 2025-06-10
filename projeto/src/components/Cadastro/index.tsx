@@ -33,7 +33,7 @@ function Cadastro() {
         };
 
         try {
-            
+
             const resposta = await api.post("", dados);
             if (resposta.data.erro) {
                 setMensagem(resposta.data.mensagem);
@@ -75,7 +75,7 @@ function Cadastro() {
                     <DefaultInput id="senha" labelText="Senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} required />
                     <DefaultInput id="confirmarSenha" labelText="Confirmar Senha" type="password" value={confirmarSenha} onChange={(e) => setConfirmarSenha(e.target.value)} required />
 
-                    <input type="submit" value="Cadastrar" />
+                    <input className={sass.inputEnvio} type="submit" value="Cadastrar" />
                     {mensagem && <p className={sass.alerta}>{mensagem}</p>}
                 </div>
             </form>

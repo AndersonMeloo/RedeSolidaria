@@ -1,0 +1,21 @@
+.contato {
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+
+    .div1 {
+        width: 50%;
+
+        div {
+            background-color: #fff;
+            border: 2px solid #fff;
+            width: 40%;
+            
+
+            p {
+                font-size: 1rem;
+
+            }
+        }
+    }
+}

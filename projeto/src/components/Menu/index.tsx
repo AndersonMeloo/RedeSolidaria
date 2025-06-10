@@ -47,7 +47,7 @@ function Menu() {
                 <div className={sass.menuLinks}>
                     <Link to="/doacoes">Doe +</Link>
                     <Link to="/sobre">Sobre nós</Link>
-                    <Link to="/contato">Contato</Link>
+                    {/* <Link to="/contato">Contato</Link> */}
                 </div>
 
                 <div className={sass.menuConta}>

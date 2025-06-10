@@ -1,0 +1,21 @@
+@use '../../assets//sass//global.scss' as *;
+@use '../../assets//sass/theme.scss' as *;
+
+.containerButton {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    button {
+        position: absolute;
+        font-size: 1rem;
+        top: 0;
+        right: -12px;
+        background-color: #79a2ff;
+        color: #fff;
+        padding: 1rem;
+        font-family: var(--font-montserrat);
+        cursor: pointer;
+        border: none;
+    }
+}
