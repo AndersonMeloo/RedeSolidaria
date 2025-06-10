@@ -18,7 +18,7 @@ function Doacoes() {
                             autoplay
                         />
                         <h2>Doação de Roupas</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente eveniet, saepe rerum, quibusdam officiis adipisci nisi nulla quia voluptatibus asperiores pariatur nobis enim! Numquam quam reprehenderit harum deserunt tempore.</p>
+                        <p>Doe roupas em bom estado e ajude quem mais precisa. Agasalhos, camisetas, calças e calçados são sempre bem-vindos para aquecer corações. Sua solidariedade pode transformar vidas com um simples gesto. Seja parte dessa corrente de empatia e amor ao próximo.</p>
                         <a href="">Doe Roupas</a>
                     </div>
 
@@ -29,7 +29,7 @@ function Doacoes() {
                             autoplay
                         />
                         <h2>Doação de Alimentos</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente eveniet, saepe rerum, quibusdam officiis adipisci nisi nulla quia voluptatibus asperiores pariatur nobis enim! Numquam quam reprehenderit harum deserunt tempore.</p>
+                        <p>Contribua com alimentos não perecíveis e leve esperança a famílias em situação de vulnerabilidade. Cada doação alimenta mais do que o corpo — alimenta a dignidade. Sua ajuda é essencial para combater a fome. Compartilhe o que tem e faça a diferença.</p>
                         <a href="">Doe Alimentos</a>
                     </div>
 
@@ -40,7 +40,7 @@ function Doacoes() {
                             autoplay
                         />
                         <h2>Doação de Móveis</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente eveniet, saepe rerum, quibusdam officiis adipisci nisi nulla quia voluptatibus asperiores pariatur nobis enim! Numquam quam reprehenderit harum deserunt tempore.</p>
+                        <p>Tem móveis em bom estado que não usa mais? Eles podem ser essenciais para quem não tem nada. Mesas, cadeiras, camas e estantes podem renovar um lar. A sua doação traz conforto, acolhimento e dignidade para muitas famílias carentes.</p>
                         <a href="">Doe Móveis</a>
                     </div>
 
@@ -51,7 +51,7 @@ function Doacoes() {
                             autoplay
                         />
                         <h2>Doação para Pets</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente eveniet, saepe rerum, quibusdam officiis adipisci nisi nulla quia voluptatibus asperiores pariatur nobis enim! Numquam quam reprehenderit harum deserunt tempore.</p>
+                        <p>Ajude animais abandonados com doações de ração, brinquedos, cobertores ou medicamentos. Os abrigos precisam da sua colaboração para manter os cuidados. Um pequeno gesto pode mudar a vida de um pet. Seja a esperança de um amigo de quatro patas</p>
                         <a href="">Doe para Pets</a>
                     </div>
 
